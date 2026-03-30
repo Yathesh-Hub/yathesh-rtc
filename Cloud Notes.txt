@@ -1,0 +1,162 @@
+13/03
+--------------------------------------------------------------------------------------------------------------------------------------------
+What is Cloud Computing?
+Delivering the IT resources like Storage , Server and network through the Internet instead of using in Locally.
+  
+IaaS:
+the cloud provider will provide the server, the user should maintain the OS , application and Coding.
+IaaS = Renting a computer server online
+
+PaaS:
+The PaaS will provides the ready-to-use platform where you can develop and deploy applications without worrying about servers.
+
+The cloud provider manages:
+Hardware
+Operating system
+Runtime environment
+
+You only focus on writing and deploying code.
+
+PaaS = Platform ready for coding and deploying apps
+
+SaaS:
+The SaaS will provides the all developed software that users can access. use can the software without any installation.
+
+SaaS = Software ready to use online 
+  
+| Service | What you manage       | Example           |
+| ------- | --------------------- | ----------------- |
+| IaaS    | Applications, OS      | AWS EC2           |
+| PaaS    | Only application code | Google App Engine |
+| SaaS    | Nothing (just use it) | Google Docs       |
+
+________________________________________________________________________________________________________________________________
+
+17/03
+
+what is Region?
+A geographical area.
+
+24/03
+
+what is devops?
+devops lifecycle
+whats in it for you?
+Devops vs Agile
+devops principles
+roles and responsibilities of a devops eng
+devops automation tools 
+summary
+
+wht is devops?
+collaboration between development and operation team to deploy code to production in automated way.
+
+devops life cycle
+plan
+code - git,jira,confluence
+build - sbt , maven
+test - Junit , Selenium
+release - Jenkins , codeship
+deploy - Docker , AWS
+operate - Chef , Ansible , Kubernetes
+monitor - Nagios , splunk , Datadog
+
+whats in it for you?
+collaboration and trust
+release faster and work smarter
+accelerate time to resolution 
+better manage unplanned work
+
+devops vs agile
+
+1.Agility           | agility in both development and operations  | only development
+2.process/practice  | involve process such as CI,CD,CT            | agile scrum , agile Kanban
+3.focus area        | timeliness , quality have equal priority    | Timeliness is the main priority
+4.scope of work     | agility and need for automation             | agility only
+5.release cycle and | smaller release cycle                       | smaller release cycle
+  development sprint| immediate feedback                          |
+
+devops principles
+
+automation , continuous delivery and fast reaction to feedback
+CAMS
+
+roles and responsibilities of a devops engineer
+
+1.develop large scale software solutions in at least one of these language python,.NET,java
+2.hands-on experience with cassandra,elasticsearch and MySQL
+3.Linux server admin experience or a deep understanding of Linux
+4.hands-on experience using puppet or chef any other configuration management tool 
+5.prototype , develop and apply software integrations based on user feedback
+6.implementation automation tools and framework 
+7.implement cloud computing ability to deploy and fixes
+8.able to carry out approaches such as risk management , clustering and failover
+9.conduct system tests for security , performance and availability
+
+SDLC:
+capability maturity model:
+*bench mark for measuring the maturity of an organization software process
+*CMM defines 5 levels of process maturity based on certain key
+
+CMM levels
+lvl 1-initial
+lvl 2-repeatable
+
+SDLC model:
+a framework that describes the activities performed 
+
+1.waterfall model
+requirement-define needed information
+design - data structures,software architecture
+implementation - source code , database
+testing
+
+strength:
+easy to understand 
+provide structure
+milestone are well understood
+requirements stability
+management control 
+quality is more important
+
+deficiencies:
+requirement must be known
+inhibits flexibility
+false impression of progress
+doesnot reflect problem solving nature
+
+when to use waterfall model
+*requirement are very well known
+*product requires stable
+*technology is understand
+*version of an existing product
+*porting an existing product
+
+V-shaped model
+The SDLC V-Model is a type of Software Development Life Cycle (SDLC). It is a method that includes testing and validation alongside each development phase.
+
+steps:
+project and requirements planning 
+product requirements and specification analysis
+architecture or high-level design
+detailed design
+production operation maintenance
+system and acceptance testing 
+integration and testing 
+unit testing 
+coding
+
+
+
+aws ec2 run-instances --image-id ami-0be9cb9f67c8dabd6 --count 1 --instance-type t3.micro --key-name newlogin--security-group-ids sg-0a06fc800eeb964de
+
+aws ec2 create-tags --resources i-0daf673d5b4c2c5f7 --tags Key=Name,Value=Ec2instance
+
+ssh -i newlogin.pem ec2-user@13.212.101.58
+
+aws ec2 describe-instances --instance-ids i-0daf673d5b4c2c5f7 --query "Reservations[*].Instances[*].ImageId"
+
+	
+
+
+
